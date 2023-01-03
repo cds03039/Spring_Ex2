@@ -1,0 +1,23 @@
+package com.lbi.service;
+
+import javax.inject.Inject;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.lbi.domain.MemberVO;
+import com.lbi.persistence.MemberDAO;
+
+@Service
+public class MemberServiceImpl implements MemberService{
+
+	
+	@Autowired
+	private MemberDAO dao;
+	
+	@Override
+	public void signup(MemberVO vo) throws Exception {
+		dao.signup(vo);
+		
+	}
+}

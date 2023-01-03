@@ -1,0 +1,17 @@
+package com.jsy.mapper;
+
+import java.util.List;
+
+import org.apache.ibatis.annotations.Insert;
+import org.apache.ibatis.annotations.Select;
+
+import com.jsy.domain.BoardVO;
+
+public interface BoardMapper {
+
+	//@Select("select * from spring_board bno")
+	
+	public List<BoardVO> getList();
+	
+	
+}

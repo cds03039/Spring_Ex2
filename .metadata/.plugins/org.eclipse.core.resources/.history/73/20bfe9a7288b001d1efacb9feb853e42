@@ -1,0 +1,15 @@
+package com.jsy.mapper;
+
+import java.util.List;
+
+
+import com.jsy.domain.BoardVO;
+
+public interface BoardMapper {
+
+	//@Select("select * from spring_board bno")
+	
+	public List<BoardVO> getList();
+	
+	
+}

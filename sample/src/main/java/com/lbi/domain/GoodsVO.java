@@ -1,0 +1,18 @@
+package com.lbi.domain;
+
+import java.util.Date;
+
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
+
+
+@Getter
+@Setter
+@ToString
+public class GoodsVO {
+	
+	private int gdsNum, gdsPrice, gdsStock;
+	private String gdsName, cateCode, gdsDes, gdsImg;
+	private Date gdsDate;
+}
